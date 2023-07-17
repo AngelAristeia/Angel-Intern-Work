@@ -1,10 +1,10 @@
 # Note this must be installed in the command line using the following line: python -m pip install --index-url=https://bcms.bloomberg.com/pip/simple blpapi
 import pandas as pd
 import subprocess
+# Downloading in the relevant Bloomberg packages
 subprocess.run(["python", "-m", "pip", "install", "--index-url=https://bcms.bloomberg.com/pip/simple", "blpapi"])
-import blpapi
-# Download this pacakge using the following line of code:python -m pip install xbbg
 subprocess.run(["python", "-m", "pip", "install", "xbbg"])
+import blpapi
 from xbbg import blp
 # The below packages are used to convert the positions script into a streamlit app for better usability
 import streamlit as st
